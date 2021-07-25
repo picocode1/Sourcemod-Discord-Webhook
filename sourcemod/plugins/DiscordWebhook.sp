@@ -48,6 +48,7 @@ public Action Main(int client, int args) {
         Format(sMessage, sizeof(sMessage), "%s %s", sMessage, sBuffer);
     }
 
+ 	//Escape bad discord chars
     ReplaceString(sMessage, sizeof(sMessage), "`", "");
     ReplaceString(sMessage, sizeof(sMessage), "_", "");
     ReplaceString(sMessage, sizeof(sMessage), ">", "");
